@@ -1,0 +1,56 @@
+GIThub------>
+COMMON STEPS
+1. main banda folder and initial files banayega
+2. ab use gitgub par daal de
+3. collaborators ass kare
+4. saare bande us repo se cloning karein
+5. [VERRY IMPORTANR] apni branch create karein
+6. apna code usi branch mein likhein
+7. compete hone par commit dein and push kr dein
+8. inform karein teammate ko about the commit
+9. merger banda fetch krega and merge krega
+
+(1.) main banda folder and initial files banayega
+1. creating new repo from (+)
+2. giving a unique name which is not available in your own repo
+3. hit create repo
+4. dont close the window after creating it 
+5. follow the next steps
+
+(2.) ab use gitgub par daal de
+1. go to VS Code open terminal
+2. go to GitHub again on the repo
+3. go to quick setup and create a new repository on the command line and add the <codes> in it one by one.
+
+(3.) collaborators ass kare
+1. go to settings
+2. collaborators
+3. add people via username, full name or Gmail(recommended)
+4. person needs to accept the request sent via email
+
+(4.) saare bande us repo se cloning karein
+go test->code->copy URL->open terminal->git clone "URL"
+
+(5.) [VERRY IMPORTANR] apni branch create karein
+go to terminal->check branch (Command)-> git branch #if you are on the repo-> git switch -c <branch-name>->or use cd to to go to the repo and git switch -c <branch-name>
+
+(6.) apna code usi branch mein likhein
+if you are a collaborator verify wether you are on the child-branch or not, verify using git branch go to the child-branch and then write the code.
+
+(7.) compete hone par commit dein and push kr dein
+terminal->git add . enter->git commit -m "commit-name-here"->git push -u origin child-branch-name
+
+(8.) inform karein teammate ko about the commit
+
+
+(9.) merger banda fetch krega and merge krega
+terminal->git fetch->git switch <child-branch-name> ->git switch main ->git merge <child-branch-name> 
+
+once done the merger needs to push it again as the updated code isn't available to the GitHub or with the collaborator 
+terminal->git push origin main
+
+once done the merger will inform the collaborator and the collaborator will
+terminal->git switch main->git fetch->git pull
+
+/*fetch->pull
+pull(fetch + merge)*/
