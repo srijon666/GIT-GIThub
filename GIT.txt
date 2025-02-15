@@ -1,0 +1,52 @@
+GIT & GIThub
+
+(1.) learning what is staged tag in git (when the tag beside your file name changes from 'U' to 'A' it means it is staged)
+
+(2.) learning what is modified tag in git (when the tag beside your file name changes from normal to 'M' after being comited in GIT means it is modified)
+
+(3.) learning to see the staged ponts in git using :- (CommandToBeWritten)-> git log --oneline
+
+(4.) added git ignore file. if the name of the file is simply written inside .gitignore then it will automatically unsee that file
+
+(5.) how to get one step backward :- (initialCommand)-> gti reset --hard (usually there are three of them :- soft, mixed and hard) hard means-> har jagha se jo bhi pichla data tha wo sab hata do (CommandToBeWritten)-> gti reset --hard HEAD~1 or gti reset --hard HEAD~2 [if you want you can go three steps backward aswell its totally upto u]
+
+(6.) check kr skte ho aap konsi file kis stge mein hai -> git status -s
+
+(7.) check kr skte ho app kitne checkpoints hai -> git log --oneline --graph
+
+(8.) git status sirf unka status batayega jo files committed nahi hai ya fir commit hone ke baad change ki gyi hai
+
+(9.) git status bataata hai file k changes k baare mei and uske state k bare mei, before and after commit
+git status bataata hai commit ke pahle and baad ki file stages. git log bataata hai saare commit histories. 
+
+(10.) running git log --oneline without --oneline
+
+(11.) How to Delete Git Commit History – A Step-by-Step Guide
+https://xebia.com/blog/deleting-your-commit-history/
+
+(12.) Branching :-
+1. adding a new branch (Command)-> git branch "branch-name"
+2. to see how many branches are there and on which branch are you in (Command)-> git branch
+3. to the branch you want to switch to (Command)-> git switch "branch-name"
+4. then if you are on the new branch you will be able to see all the committed files from the new branch. Similarly if you want to see the changes on the main branch which are done in child-branch then you need to first commit the changes in the child-branch then, switch to the main branch. After coming to main branch you want to see the changes made on child-branch, follow the next step.
+
+*5. merging techniques - ff merge, three way merge, squash merging, recursive strategy merge, rebase and merge. In this we will be learning fast forward merge, three way merge
+^ff merge - A1-B1-B2 
+ [Head(H)    H--->H]
+it changes the heads location from main to child branch which creates an illusion that the branches has been merged which actually didn't happen at all
+^three way merge - A1-A2-A3-C(A2+A3+B2)
+                        -B1-B2 
+'These are the two mainly used merges used in real-life'
+
+6. merging the child-branch to main branch (Command)-> git merge "child-branch-name"
+wollah!!
+7. when new line added to both on the same line and then merged it will 1st ask to resolve conflicts, which u can accept whatever you want based on ur preference (accept main/accept incoming/accept both/compare both)
+8. when accepted any of the one  you need to first add then commit. For example if choosen accept both then it will add both and show exclamation '!' symbol beside the file name, then you need to commit the main branch once merged. once done (Command)-> git log --oneline - will show the progress report, and (Command)-> git log --graph - will show the progress report in graphical way. 
+9. once done now you can delete the child branch from the main branch using the command (Command)-> git -d "child-branch-name"
+
+*10. (Command)-> git switch -c "child-branch-name" - means first creating a child-branch then switching to that child-branch
+
+(13.) Stashing :-
+1. Creating stash:- (Command)-> git stash
+2. Applying stash on the same branch once you are back from the other branch :- (Command)-> git stash apply
+3. for once u think that whatever the changes are, are good and delete whatever is kept in memory (Command)-> git stash clear ->clear
