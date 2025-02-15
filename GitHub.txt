@@ -38,7 +38,7 @@ go to terminal->check branch (Command)-> git branch #if you are on the repo-> gi
 if you are a collaborator verify wether you are on the child-branch or not, verify using git branch go to the child-branch and then write the code.
 
 (7.) compete hone par commit dein and push kr dein
-terminal->git add . enter->git commit -m "commit-name-here"->git push -u origin child-branch-name
+terminal->git add . enter->git commit -m <commit-name-here>->git push -u origin child-branch-name
 
 (8.) inform karein teammate ko about the commit
 
